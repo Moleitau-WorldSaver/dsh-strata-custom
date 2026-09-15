@@ -1,7 +1,7 @@
 {
   "name": "dsh-strata",
   "version": "0.12.1",
-  "description": "Session strata (customized) for the DeepSeek Harness Web GUI: the transcript's scrollbar becomes a to-scale, colour-coded map of the whole run — user messages emphasised, clickable anchors, auto-loading history, and a hover deck of every prompt in the session.",
+  "description": "历史提问地图：在 DSH 对话里找回你问过的每一句话 —— 历史提问面板 + 等比会话地图，鼠标一停列出全部提问，点一下跳回那一轮。Prompt-history minimap for the DeepSeek Harness Web GUI: every question you ever asked, one click away.",
   "keywords": [
     "dsh",
     "dsh-plugin",
