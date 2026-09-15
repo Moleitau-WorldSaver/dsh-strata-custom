@@ -1,0 +1,6 @@
+# 统一按 LF 收发，避免 Windows 上被 autocrlf 改写导致整文件 diff
+* text=auto eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.md text eol=lf

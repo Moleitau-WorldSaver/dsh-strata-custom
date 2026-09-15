@@ -1,0 +1,21 @@
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 依赖与构建产物
+node_modules/
+dist/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# 本地备份（开发时留下的原版/历史副本，不发布）
+*.bak
+*.bak-*
+*.orig
+
+# 临时文件
+*.tmp
+.tmp/

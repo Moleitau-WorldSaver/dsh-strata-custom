@@ -1,0 +1,58 @@
+{
+  "name": "dsh-strata",
+  "version": "0.12.1",
+  "description": "Session strata (customized) for the DeepSeek Harness Web GUI: the transcript's scrollbar becomes a to-scale, colour-coded map of the whole run — user messages emphasised, clickable anchors, auto-loading history, and a hover deck of every prompt in the session.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "minimap",
+    "scrollbar",
+    "conversation",
+    "navigation"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-chat"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moleitau-WorldSaver/dsh-strata-custom.git"
+  },
+  "homepage": "https://github.com/Moleitau-WorldSaver/dsh-strata-custom#readme",
+  "bugs": {
+    "url": "https://github.com/Moleitau-WorldSaver/dsh-strata-custom/issues"
+  },
+  "author": "jsdvjx (original dsh-strata)",
+  "contributors": [
+    "Moleitau-WorldSaver (customized derivative)"
+  ]
+}
