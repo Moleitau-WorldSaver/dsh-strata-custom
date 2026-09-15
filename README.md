@@ -94,15 +94,13 @@
 这是一个 DSH **profile 插件包**（`dsh.bundle` + `dsh.client` 双声明）。
 
 ```bash
-# 方式一：从 GitHub 直接装入 profile
 dsh plugin --profile web add github:Moleitau-WorldSaver/dsh-strata-custom
-
-# 方式二：clone 下来，用本地路径装
-git clone https://github.com/Moleitau-WorldSaver/dsh-strata-custom
-dsh plugin --profile web add file:/绝对路径/dsh-strata-custom
 ```
 
 装完刷新 DSH Web GUI 即可看到。
+
+> 想改源码：`git clone` 这个仓库，改 `client.js` 后刷新页面就生效——没有构建步骤。
+> 要在别的 profile 里用本地目录装载，把 clone 下来的目录路径当包路径装进去即可。
 
 ### ⚠️ 两个注意
 
